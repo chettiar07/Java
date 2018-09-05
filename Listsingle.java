@@ -18,7 +18,7 @@ public class Listsingle {
 			i++;
 			if(i==5) {
 				int[] ChangedArray = Arrays.copyOf(array, 10);
-				ChangedArray[i+1]=n;
+				ChangedArray[i]=n;
 				System.out.println(ChangedArray.toString());
 			}
 		}
