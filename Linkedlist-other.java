@@ -35,14 +35,21 @@ public class Linkedlist {
 	}
 	
 	int lengthlink() {
-		Node temp=head;
-		int i=1;
-		while(temp.next!=null) {
-			temp=temp.next;
-			i++;
+		if(head==null){
+			int i=0;
+			System.out.println("There are no nodes in the list");
+			return i;
 		}
-		return i;
-		
+		else{
+			Node temp=head;
+			int i=1;
+			while(temp.next!=null) {
+				temp=temp.next;
+				i++;
+			}
+			return i;
+		}
+			
 	}
 	
 	void delete(int target) {
